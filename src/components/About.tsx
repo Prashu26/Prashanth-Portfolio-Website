@@ -132,7 +132,7 @@ export const About: React.FC = () => {
 
             <div className="p-3 bg-[#131926] rounded-xl border border-[#202C44] text-xs text-gray-400 font-mono">
               <span className="text-blue-400">$</span> status --availability<br />
-              <span className="text-emerald-400">&gt; Summer 2025/2026 Ready</span>
+              <span className="text-emerald-400">&gt; Internship & Fresher Ready</span>
             </div>
           </div>
 

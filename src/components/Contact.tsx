@@ -124,10 +124,10 @@ export const Contact: React.FC = () => {
             <div className="bg-[#101420] border border-[#1E2638] rounded-2xl p-6 space-y-4 shadow-xl">
               <div className="flex items-center gap-2 text-xs font-mono text-emerald-400 uppercase tracking-wider">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span>OPEN FOR INTERNSHIPS</span>
+                <span>OPEN FOR OPPORTUNITIES</span>
               </div>
               <p className="text-sm text-gray-300 leading-relaxed">
-                Currently open to software engineering internships and collaborative research projects for Summer 2025 and 2026.
+                Currently open to software engineering internships and fresher roles.
               </p>
               <div className="text-xs text-gray-500 font-mono pt-2 border-t border-[#182030] flex items-center justify-between">
                 <span>Location: Bengaluru, India</span>

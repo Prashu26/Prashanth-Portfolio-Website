@@ -32,7 +32,7 @@ export const InteractiveTerminal: React.FC = () => {
     } else if (cmd === 'contact' || cmd === 'email') {
       out = `Email: ${PERSONAL_INFO.socialLinks.email} | GitHub: ${PERSONAL_INFO.socialLinks.github}`;
     } else if (cmd === 'sudo hire') {
-      out = 'Permission granted! Send an email or invite Prashanth for Summer 2025/2026 internships. 🚀';
+      out = 'Permission granted! Send an email or invite Prashanth for internship and fresher roles. 🚀';
     } else if (cmd === 'clear') {
       setHistory([]);
       setCustomInput('');

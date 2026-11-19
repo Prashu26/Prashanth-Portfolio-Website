@@ -61,7 +61,7 @@ export const PERSONAL_INFO = {
     graduationYear: "2027",
     cgpa: "8.67 / 10",
   },
-  status: "Available for Summer 2025 / 2026 Internships",
+  status: "Available for Internship and fresher roles",
   socialLinks: {
     github: "https://github.com/prashu26",
     linkedin: "https://www.linkedin.com/in/prashanth-h-m-6a3735271/",
