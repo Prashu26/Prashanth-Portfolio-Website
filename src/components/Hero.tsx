@@ -7,7 +7,8 @@ import {
   Linkedin, 
   MapPin, 
   ChevronDown, 
-  Terminal
+  Terminal,
+  ExternalLink
 } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import { InteractiveTerminal } from './InteractiveTerminal';
@@ -86,13 +87,16 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                 <ArrowRight className="w-4 h-4" />
               </button>
 
-              <button
-                onClick={onOpenResume}
+              <a
+                href={PERSONAL_INFO.socialLinks.resume}
+                target="_blank"
+                rel="noreferrer"
                 className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-gray-200 bg-[#141A26] hover:bg-[#1D2536] border border-[#243048] hover:border-blue-500/40 active:scale-95 transition"
               >
                 <FileText className="w-4 h-4 text-blue-400" />
                 <span>Download Resume</span>
-              </button>
+                <ExternalLink className="w-3.5 h-3.5 text-gray-500" />
+              </a>
 
               <button
                 onClick={() => scrollTo('contact')}

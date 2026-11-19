@@ -17,9 +17,12 @@ export const InteractiveTerminal: React.FC = () => {
     let out: string | React.ReactNode = '';
 
     if (cmd === 'help') {
-      out = 'Available commands: whoami, skills, projects, contact, cgpa, clear, sudo hire';
+      out = 'Available commands: whoami, skills, projects, contact, resume, cgpa, clear, sudo hire';
     } else if (cmd === 'whoami') {
       out = `${PERSONAL_INFO.name} — ${PERSONAL_INFO.roleTitle}`;
+    } else if (cmd === 'resume' || cmd === 'cv') {
+      window.open(PERSONAL_INFO.socialLinks.resume, '_blank');
+      out = `Opening official resume in new tab: ${PERSONAL_INFO.socialLinks.resume}`;
     } else if (cmd === 'cgpa' || cmd === 'education') {
       out = `${PERSONAL_INFO.education.institution} (${PERSONAL_INFO.education.graduationYear}) — CGPA: ${PERSONAL_INFO.education.cgpa}`;
     } else if (cmd === 'skills') {

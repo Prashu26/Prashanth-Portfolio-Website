@@ -122,8 +122,18 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
     },
     {
       category: 'Actions',
+      id: 'act-resume-drive',
+      label: 'Open Official Resume (Google Drive PDF)',
+      icon: FileText,
+      action: () => {
+        onClose();
+        window.open(PERSONAL_INFO.socialLinks.resume, '_blank');
+      },
+    },
+    {
+      category: 'Actions',
       id: 'act-resume',
-      label: 'View / Download Resume',
+      label: 'View Interactive Curriculum Vitae',
       icon: FileText,
       action: () => {
         onClose();

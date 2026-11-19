@@ -65,8 +65,8 @@ export const PERSONAL_INFO = {
   socialLinks: {
     github: "https://github.com/prashu26",
     linkedin: "https://www.linkedin.com/in/prashanth-h-m-6a3735271/",
-    email: "prashanthhm26@gmail.com",
-    resume: "/resume.pdf"
+    email: "prashugowda179@gmail.com",
+    resume: "https://drive.google.com/file/d/1BNW0fMWVpoMNRn6JaFC0n0KVXcaJ6cHn/view?usp=sharing"
   },
   interests: [
     "Backend Systems & REST APIs",

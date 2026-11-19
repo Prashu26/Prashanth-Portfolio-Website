@@ -86,21 +86,31 @@ ${ACHIEVEMENTS.map(a => `• ${a.title} - ${a.award} (${a.year}): ${a.descriptio
           </div>
 
           <div className="flex items-center gap-2">
+            <a
+              href={PERSONAL_INFO.socialLinks.resume}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-500/20 transition"
+              title="Open Official PDF in Google Drive"
+            >
+              <ExternalLink className="w-3.5 h-3.5" />
+              <span>Open Drive PDF</span>
+            </a>
             <button
               onClick={handlePrint}
               className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-gray-300 bg-[#161D2B] hover:bg-[#1E273A] border border-[#273248] transition"
               title="Print Resume"
             >
               <Printer className="w-3.5 h-3.5 text-blue-400" />
-              <span>Print / Save PDF</span>
+              <span>Print / PDF</span>
             </button>
             <button
               onClick={handleDownload}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-500/20 transition"
+              className="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-gray-300 bg-[#161D2B] hover:bg-[#1E273A] border border-[#273248] transition"
               title="Download Plaintext Summary"
             >
               <Download className="w-3.5 h-3.5" />
-              <span>Download</span>
+              <span>Text</span>
             </button>
             <button
               onClick={onClose}
